@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tracker – Privacy Policy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange:     #F5820A;
+      --orange-dark:#C96800;
+      --orange-pale:#FFF3E0;
+      --white:      #FFFFFF;
+      --dark:       #1A1A1A;
+      --gray:       #555555;
+      --light-gray: #F9F9F9;
+      --border:     #FFD9A8;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--light-gray);
+      color: var(--dark);
+      line-height: 1.75;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(135deg, #F5820A 0%, #E06500 60%, #C45000 100%);
+      padding: 60px 24px 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.07);
+      top: -120px; right: -100px;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      width: 260px; height: 260px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      bottom: -80px; left: -60px;
+    }
+
+    .logo-wrap {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+      border-radius: 24px;
+      width: 80px; height: 80px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+      margin-bottom: 22px;
+    }
+    .logo-wrap img {
+      width: 56px; height: 56px;
+      object-fit: contain;
+    }
+    .logo-wrap .logo-emoji { font-size: 40px; line-height: 1; }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: var(--white);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .hero .tagline {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: clamp(0.85rem, 2.5vw, 1.05rem);
+      color: rgba(255,255,255,0.88);
+      margin-top: 8px;
+      letter-spacing: 0.5px;
+    }
+    .hero .badge {
+      display: inline-block;
+      margin-top: 22px;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 600;
+      padding: 6px 18px;
+      border-radius: 999px;
+      letter-spacing: 0.5px;
+    }
+
+    /* wave divider */
+    .wave {
+      display: block;
+      width: 100%;
+      height: 48px;
+      background: var(--light-gray);
+      clip-path: ellipse(55% 100% at 50% 100%);
+      margin-top: -2px;
+    }
+
+    /* ── CONTENT ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 8px 24px 60px;
+    }
+
+    .updated {
+      text-align: center;
+      font-size: 0.82rem;
+      color: var(--gray);
+      margin: 24px 0 40px;
+    }
+    .updated span {
+      background: var(--orange-pale);
+      border: 1px solid var(--border);
+      color: var(--orange-dark);
+      font-weight: 600;
+      padding: 4px 14px;
+      border-radius: 999px;
+    }
+
+    /* intro card */
+    .intro-card {
+      background: var(--white);
+      border-left: 5px solid var(--orange);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 36px;
+      box-shadow: 0 2px 12px rgba(245,130,10,0.08);
+      font-size: 0.97rem;
+      color: var(--gray);
+    }
+
+    /* section */
+    .section {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 28px 28px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 14px rgba(0,0,0,0.05);
+      transition: box-shadow 0.2s;
+    }
+    .section:hover { box-shadow: 0 4px 24px rgba(245,130,10,0.12); }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .section-icon {
+      width: 44px; height: 44px;
+      border-radius: 12px;
+      background: var(--orange-pale);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+      flex-shrink: 0;
+    }
+    .section h2 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 1.08rem;
+      color: var(--dark);
+    }
+
+    .section p {
+      font-size: 0.94rem;
+      color: var(--gray);
+      margin-bottom: 10px;
+    }
+    .section p:last-child { margin-bottom: 0; }
+
+    /* pill list */
+    .pill-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .pill-list li {
+      background: var(--orange-pale);
+      border: 1px solid var(--border);
+      color: var(--orange-dark);
+      font-size: 0.84rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 999px;
+    }
+
+    /* check list */
+    .check-list {
+      list-style: none;
+      margin-top: 4px;
+    }
+    .check-list li {
+      font-size: 0.93rem;
+      color: var(--gray);
+      padding: 6px 0 6px 28px;
+      position: relative;
+      border-bottom: 1px solid #F3F3F3;
+    }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--orange);
+      font-weight: 700;
+      font-size: 1rem;
+    }
+
+    /* highlight box */
+    .highlight {
+      background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      font-size: 0.92rem;
+      color: var(--orange-dark);
+      font-weight: 500;
+      margin-top: 10px;
+    }
+
+    /* contact card */
+    .contact-card {
+      background: linear-gradient(135deg, #F5820A 0%, #E06500 100%);
+      border-radius: 16px;
+      padding: 28px;
+      text-align: center;
+      margin-top: 8px;
+      color: var(--white);
+    }
+    .contact-card .company {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 800;
+      font-size: 1.15rem;
+      letter-spacing: 1px;
+    }
+    .contact-card .sub {
+      font-size: 0.88rem;
+      opacity: 0.85;
+      margin-top: 4px;
+    }
+    .contact-card .location {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 12px;
+      background: rgba(255,255,255,0.18);
+      padding: 6px 16px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* footer */
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 0.78rem;
+      color: #999;
+    }
+
+    @media (max-width: 520px) {
+      .section { padding: 20px 16px; }
+      .hero { padding: 44px 16px 64px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="logo-wrap">
+      <span class="logo-emoji">📅</span>
+    </div>
+    <h1>Tracker</h1>
+    <p class="tagline">Track your work. Own your time.</p>
+    <span class="badge">Privacy Policy</span>
+  </div>
+  <div class="wave"></div>
+
+  <!-- CONTENT -->
+  <div class="container">
+
+    <p class="updated"><span>Last updated: July 2025</span></p>
+
+    <div class="intro-card">
+      This Privacy Policy explains how <strong>Suraj Informatics Pvt. Ltd. (SIPL)</strong> collects, uses, and protects your information when you use the <strong>Tracker</strong> app — an internal workforce management platform for employees and managers to manage timesheets, activities, leave, and work exceptions.
+    </div>
+
+    <!-- 1. Who Uses This App -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">👥</div>
+        <h2>1. Who Uses This App</h2>
+      </div>
+      <p>Tracker is exclusively for authorized SIPL employees and managers. It supports two user roles:</p>
+      <ul class="pill-list">
+        <li>👷 Employees</li>
+        <li>🧑‍💼 Managers / Supervisors</li>
+      </ul>
+      <div class="highlight">
+        This app is not available to the general public. Only verified SIPL personnel with valid credentials can access it.
+      </div>
+    </div>
+
+    <!-- 2. What We Collect -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📋</div>
+        <h2>2. Information We Collect</h2>
+      </div>
+      <ul class="check-list">
+        <li><strong>Login credentials</strong> — Employee ID and password used to authenticate.</li>
+        <li><strong>Timesheet data</strong> — Daily/weekly work hours you fill and submit.</li>
+        <li><strong>Activity records</strong> — Tasks and project activities created or updated.</li>
+        <li><strong>Leave requests</strong> — Leave type, dates, and approval status.</li>
+        <li><strong>Exception entries</strong> — Attendance discrepancies raised or reverted.</li>
+        <li><strong>Location data</strong> — Device GPS may be accessed for attendance verification.</li>
+        <li><strong>Device info</strong> — Device model and OS version for technical support.</li>
+      </ul>
+    </div>
+
+    <!-- 3. How We Use It -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">⚙️</div>
+        <h2>3. How We Use Your Information</h2>
+      </div>
+      <ul class="check-list">
+        <li>To authenticate employees and grant access to the app.</li>
+        <li>To record, manage, and report daily work activities and timesheets.</li>
+        <li>To process leave applications and notify employees of approval status.</li>
+        <li>To allow managers to allocate employees to projects and tasks.</li>
+        <li>To handle attendance exceptions and maintain accurate records.</li>
+        <li>To generate workforce reports for management visibility.</li>
+      </ul>
+    </div>
+
+    <!-- 4. Data Sharing -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🔒</div>
+        <h2>4. Data Sharing</h2>
+      </div>
+      <p>Your data is shared only within SIPL's internal systems — between employees, their reporting managers, and authorized HR/admin personnel — strictly for workforce management purposes.</p>
+      <div class="highlight">
+        🚫 We do not sell, rent, or share your personal data with any third party for advertising or commercial purposes.
+      </div>
+    </div>
+
+    <!-- 5. Data Security -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">🛡️</div>
+        <h2>5. Data Security</h2>
+      </div>
+      <ul class="check-list">
+        <li>All data is transmitted over <strong>HTTPS</strong> (encrypted connection).</li>
+        <li>Data is stored securely on SIPL's internal servers.</li>
+        <li>Access is restricted to authorized personnel only.</li>
+        <li>Login sessions are managed with secure token-based authentication.</li>
+      </ul>
+    </div>
+
+    <!-- 6. Your Rights -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">✋</div>
+        <h2>6. Your Rights</h2>
+      </div>
+      <p>As an employee using Tracker, you have the right to:</p>
+      <ul class="check-list">
+        <li>View your submitted timesheets, activities, and leave records within the app.</li>
+        <li>Raise exceptions to correct any inaccurate attendance data.</li>
+        <li>Request data correction or deletion by contacting your IT/admin team.</li>
+      </ul>
+    </div>
+
+    <!-- 7. Contact -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">📬</div>
+        <h2>7. Contact Us</h2>
+      </div>
+      <p>For any privacy-related queries or data requests, please reach out to your organization's IT/admin team:</p>
+      <div class="contact-card">
+        <div class="company">SURAJ INFORMATICS</div>
+        <div class="sub">Inspiring Networks · Pvt. Ltd.</div>
+        <div class="location">📍 Navi Mumbai, Maharashtra, India</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Suraj Informatics Pvt. Ltd. · Tracker App · All rights reserved.
+  </footer>
+
+</body>
+</html>
